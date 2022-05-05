@@ -18,26 +18,63 @@
 }
 
 .Step {
-    &-container{
+
+    &-wrapper{
         display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+   
+
+    &-container-last{
+        display: none !important;
+    }
+
+
+    &-container{
+        display: flex !important;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        cursor: pointer;
+    }
+
+    // &-container::before{
+    //     content:"";
+    //     width: 300px;
+    //     height: 6px;
+    //     background-color: var(--product-card-text-border-color);
+    //     // background-color: var(--button-background);
+    //     flex-grow:1;
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+
+    &-line{
+        height: 5px;
+        width: 350px;
+        background-color: var(--product-card-text-border-color);
+        flex-grow: 1;
+        align-self: baseline;
     }
 
     &-number{
-    background-color: var(--button-background);
-    color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+        background-color: var(--button-background);
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     &-title{
         margin-top: 10px;
     }
+
+
 }
 

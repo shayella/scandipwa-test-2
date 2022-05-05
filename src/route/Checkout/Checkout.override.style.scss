@@ -28,9 +28,12 @@
     &-number{
     background-color: var(--button-background);
     color: white;
-    padding: 8px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     align-items: center;
+    justify-content: center;
+    display: flex;
     }
 
     &-title{

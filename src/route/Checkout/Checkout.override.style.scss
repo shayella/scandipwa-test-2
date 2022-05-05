@@ -60,8 +60,12 @@
         align-self: baseline;
     }
 
-    &-number{
+    &-line-selected{
         background-color: var(--button-background);
+    }
+
+    &-number{
+        background-color: var(--product-card-text-border-color);
         color: white;
         width: 25px;
         height: 25px;
@@ -69,6 +73,10 @@
         align-items: center;
         justify-content: center;
         display: flex;
+    }
+
+    &-number-selected{
+        background-color: var(--button-background);
     }
 
     &-title{

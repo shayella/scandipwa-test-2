@@ -6,9 +6,9 @@ import ProgressBar from "src/Progressbar.component";
 class Checkout extends SourceCheckout{
 
     renderProgressBar(){
-        // const allSteps = Object.keys(this.stepMap)
+
         return (
-            <ProgressBar steps={this.stepMap}/>
+            <ProgressBar steps={this.stepMap} selectedStep={this.props.checkoutStep}/>
         )
     }
     

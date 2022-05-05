@@ -1,7 +1,7 @@
 import {Checkout as SourceCheckout} from "SourceRoute/Checkout/Checkout.component"
 import ContentWrapper from "@scandipwa/scandipwa/src/component/ContentWrapper";
 import "./Checkout.override.style.scss";
-import ProgressBar from "src/Progressbar.component";
+import ProgressBar from "src/ProgressBar/Progressbar.component";
 
 class Checkout extends SourceCheckout{
 

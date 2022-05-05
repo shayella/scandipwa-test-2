@@ -1,77 +1,11 @@
 .Checkout {
-
+    
     &::before {
         @include after-mobile {
             display: none;
     }
     }
-
-    &-ProgressBar{
-            background: var(--breadcrumbs-background);
-            min-height: var(--breadcrumbs-height);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
-            padding-top: 20px;
-    }
 }
 
-.Step {
 
-    &-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        flex-direction: row;
-    }
-
-   
-
-    &-container-last{
-        display: none !important;
-    }
-
-
-    &-container{
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    &-line{
-        height: 5px;
-        width: 350px;
-        background-color: var(--product-card-text-border-color);
-        flex-grow: 1;
-        align-self: baseline;
-    }
-
-    &-line-selected{
-        background-color: var(--button-background);
-    }
-
-    &-number{
-        background-color: var(--product-card-text-border-color);
-        color: white;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-
-    &-number-selected{
-        background-color: var(--button-background);
-    }
-
-    &-title{
-        margin-top: 10px;
-    }
-
-
-}
-
+ 

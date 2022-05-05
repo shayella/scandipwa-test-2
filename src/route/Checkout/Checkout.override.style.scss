@@ -2,7 +2,6 @@
 
     &::before {
         @include after-mobile {
-            
             display: none;
     }
     }
@@ -14,22 +13,28 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: baseline;
+            padding-top: 20px;
     }
-
-
-
 }
 
 .Step {
-    &-number{
-        &-ProgressBar{
-            background: var(--breadcrumbs-background);
-            min-height: var(--breadcrumbs-height);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-}
+
+    &-number{
+    background-color: var(--button-background);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    align-items: center;
+    }
+
+    &-title{
+        margin-top: 10px;
+    }
 }
 

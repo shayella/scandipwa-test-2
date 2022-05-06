@@ -1,3 +1,7 @@
+:root {
+    --progress-bar-fill-color: var(--primary-base-color)
+}
+
 .Progressbar{
     background: var(--breadcrumbs-background);
     min-height: var(--breadcrumbs-height);
@@ -17,11 +21,11 @@
     }
 
     &-filled{
-        background-color: var(--button-background);
+        background-color: var(--progress-bar-fill-color);
         height: 100%;
         width: 100%;
         border-radius: 5px;
-        animation: fillProgressbar 1s ease-in 1;
+        animation: fillProgressbar 1.6s ease-in ;
     }
 }
 
@@ -54,7 +58,7 @@
 }
 
 &-number-selected{
-    background-color: var(--button-background);
+    background-color: var(--progress-bar-fill-color);
     animation: colorProgressNumber 2s ease-in;
 }
 

@@ -15,6 +15,7 @@ class ProgressBar extends Component{
                 {
                     stepsArr.map(step=>{
                         let isFilled = stepsArr.indexOf(step) <= indexofCurrentStep;
+                        let isCompleted =  stepsArr.indexOf(step) < indexofCurrentStep;
                         let isLastStep = stepsArr.indexOf(step) == stepsArr.length-1;
                         
                         return(
@@ -24,7 +25,7 @@ class ProgressBar extends Component{
                             </div>
 
                             <div className={isLastStep?"Step-container-last":'Step-container'}>
-                                <span className={isFilled?"Step-number Step-number-selected":'Step-number'}>{stepsArr.indexOf(step)+1}</span>
+                                <span className={isFilled?"Step-number Step-number-selected":'Step-number'}>{isCompleted ? <span className='Step-check-mark'>L</span> :stepsArr.indexOf(step)+1}</span>
                                 <p className='Step-title'>{step[1]["title"]["value"]}</p>
                             </div>
                             
